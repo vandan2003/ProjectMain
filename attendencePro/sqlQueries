@@ -1,0 +1,30 @@
+create database fingerPrint;
+use fingerPrint;
+create table student(
+    id int primary key auto_increment,
+    name varchar(100) not null,
+    batch varchar(10) not null,
+    qualification varchar(100) not null,
+    address varchar(100) not null,
+    gender varchar(10) not null,
+    email varchar(100) not null,
+    contectNo varchar(10) not null
+);
+create table attendence(
+    id int primary key auto_increment,
+    stdId int not null,
+    date varchar(30) not null,
+    time varchar(30) not null,
+    foreign key(stdID) references student(id)
+);
+create table tempstudent(
+    id int primary key auto_increment,
+    name varchar(100) not null,
+    batch varchar(10) not null,
+    qualification varchar(100) not null,
+    address varchar(100) not null,
+    gender varchar(10),
+    email varchar(100) not null,
+    contectNo varchar(10) not null,
+    tempDate varchar(30) not null
+);
