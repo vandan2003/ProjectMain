@@ -1,22 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package model;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author ftt
- */
 public class Student {
 
     private int id;
     private String name;
+    private String batch;
     private String fatherName;
     private String motherName;
-    private String batch;
     private String contactNo;
     private String email;
     private String qualification;
@@ -25,6 +18,21 @@ public class Student {
     private String gender;
     private ArrayList AttendenceList;
 
+    public Student(int id, String name, String batch, String fatherName, String motherName, String contactNo, String email, String qualification, String parentContactNo, String address, String gender) {
+        this.id = id;
+        this.name = name;
+        this.batch = batch;
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.contactNo = contactNo;
+        this.email = email;
+        this.qualification = qualification;
+        this.parentContactNo = parentContactNo;
+        this.address = address;
+        this.gender = gender;
+    }
+
+    
     public Student(int id, String name, String batch, String fatherName, String motherName, String contactNo, String email, String qualification, String parentContactNo, String address, String gender, ArrayList AttendenceList) {
         this.id = id;
         this.name = name;
