@@ -1,5 +1,5 @@
-create database fingerPrint;
-use fingerPrint;
+create database projectMain;
+use projectMain;
 create table student(
     id int primary key auto_increment,
     name varchar(100) not null,
@@ -8,7 +8,10 @@ create table student(
     address varchar(100) not null,
     gender varchar(10) not null,
     email varchar(100) not null,
-    contactNo varchar(10) not null
+    contactNo varchar(10) not null,
+    fatherName varchar(100) not null,
+    parentContact varchar(100) not null,
+    motherName varchar(100) not null
 );
 create table attendence(
     id int primary key auto_increment,
@@ -28,3 +31,321 @@ create table tempstudent(
     contectNo varchar(10) not null,
     tempDate varchar(30) not null
 );
+
+
+
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('chirag vakare','batch4','Btech','38/1 vallabh nagar indore','male','chiragvakare2904@gmail.com','7869425567',' Manoj Vakare','7771022062','Rekha Vakare');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('ujjwal parsai','batch4','Bcom','127 Indra Ghandhi Nagar Abhishek Appartment Indore','male','Ujjwalparsai62@gmail.com','9752126659','late. Upendra Parsai','8269852400','Versha Parsai');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('shivendra mishra','batch4','Bsc','Ekta nagar near girnar city indore','male','mshivendra462@gmail.com','9179981251','Surendra Mishra','8519037034','Rani Mishra');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('abhishek sen','batch4','Bsc','gram sarsood post charuw khirkiya harda mp','male','abhi22sen2000@gmail.com','9522347460','Mangilal Sen','9669705161','Saroj Sen');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('riya soner','batch4','Bsc','District Harda village sarsud','female','riyasoner@gmail.com','7803943733','Deepak Soner','9977141978','Manorama Soner');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('mukul dixit','batch4','Bsc','1691 new dwarkapuri indore','male','mukuldixit931@gmail.com','9131680911','Suresh dixit','7000376685','Sunita Dixit');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('gautam karma','batch4','Btech','70 A dwarkapuri Indore','male','goutamkarma97541@gmail.com','9340517364','Arvind Karma','9754167960','Uma Karma');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('vijay vishwakarma','batch4','Bca','shanti nagar indore','male','vishwakarma.vijay.1001@gmail.com','9009335513','Rajesh vishwakarma','7470559084','Anita vishwakarma');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('bhawna rajput','batch4','Bsc','Ronsla Jagir','female','bhawnajadam9@gmail.com','9301184511',' Pratap Singh Rajput','9098995453',' Yashoda Devi');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('vijay verma','batch4','Bca','O 14 IDA MULTI Scheme no 140 Bicholi mardana road','male','vandanv57@gmail.com','7987983889','Umesh Verma','9399088238','Kusum Verma');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('harshita sisodiya','batch4','Bca','131 Marimata Square Indore','female','harshitasisodiya94@gmail.com','7879634560','Dinesh Singh Sisodiya','7987143053','Bhagyalaxmi Sisodiya');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('tarun karadiya','batch4','Bca','591 Patwari Chouk Bijalpur Indore','male','karadiyatarun0@gmail.com','6263766505','Santosh Karadiya','9826889886','Savitri Karadiya');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('sanju patel','batch4','Bca','Rajendra Nagar Main Road Near Railway Station Indore','male','sanjupatel2308@gmail.com','7000191398','Rakesh Patel','6262947166','Imarti Patel');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('vicky hatagale','batch4','Btech','199 Narval Sanwer Road Indore','male','vickyhatagale505@gmail.com','8966813419',' Santosh Hatagale','8103012820','Anita Hatagale');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('astha gupta','batch4','Msc','Jawahar Marg Bagli Dewas','female','gastha964@gmail.com','9617096571','Santosh Gupta','9753808621','Lila Gupta');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('payal vishwakarma','batch4','Bca','605 D Prajapat Nagar Indore','female','vishwakarmapayal51@gmail.com','8964958578','Kamlesh Vishwakarma','9755590150','Rukmani Vishwakarma');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('raj jatwa','batch4','Bca','16/1 kishanpura maxi road Ujjain','male','rajjatwa202@gmail.com','9340649145','Mahesh Jatwa','9589222860','Aasha Jatwa');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('mausam lodhi','batch4','Btech','Sagar','male','mausamlodhi326@gmail.com','7415250242','Veersingh lodhi','9009206096','Shakuntala lodhi');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('arpit garg','batch4','Bsc','09 Ram Mandir Marg Khategaon Dewas 455336','male','arpitgarg19593@gmail.com','8982988783','Mahendra Garg','7400556640','Rupali Garg');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('sachin tomer','batch4','graduate','Harnawada dist Dewas MP','male','s8120170044@gmail.com','8120170044','Surendra Singh Tomar','9977743032','Anuradha Tomar');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('pooja rajput','batch4','Msc','Gadamod kala district harda','female','poojarajput9516@gmail.com','9516702347','Chiman Singh Rajput','6265650843','Jaynti Rajput');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('chetna rathore','batch4','Bsc','8 Teli Bakhal Malharganj Indore','female','rathorechetna03@gmail.com','8305268896','RamRaghuVeer Rathore','8120469900','Lad Rathore');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('yashwant prajapat','batch4','Bcom','28 Kushwah Nagar INDORE','male','yashwant03102001@gmail.com','6267147039','Rajesh Prajapat','8103505225','Sarita Prajapat');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('krati shah','batch4','Bca','Ramchandra nagar ext Indore','female','kratishah2003@gmail.com','8319050309','Malay shah','9479406231','Nidhi shah');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('mohit rajput','batch4','Bsc','16 lahiya colony Kabit Khedi indore','male','rajputmohit2134@gmail.com','9754217941','Ashok Rajput','9343696963','Kanchan Rajput');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('lokesh ingle','batch4','Btech','239','male','lokeshingle2020@gmail.com','7440550583','Ramesh ingle','7440550583','Ranu ingle');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('shivani patel','batch4','Bsc','Dewas','female','patelshivani3008@gmail.com','7869647618','Bhagwat patel','8236840304','Sadhna patel');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('vanshika joshi','batch4','Bcom','75 Imli Bazar Indore','female','vanshikajoshi2021@gmail.com','9229218000','Pawan Joshi','9098090073','Asha Joshi');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('nidhi tiwari','batch4','Msc','37 ram nagar mushakhedi Indore','female','nidhitiwari1402@gmail.com','9644283059','Devki Nandan Tiwari','9826811875','Janki Tiwari');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('vikram singh rajput','batch4','graduate','Village Kakrhta Po Bilha Tah Gunour Dis Panna MP','male','vikrampratapsingh628@gmail.com','9131662200','Tulsi Das Rajpoot','9131435336','Hukum Bai');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('ankit singh rajput','batch4','under graduate','Gram Khodiyakhedi Dist Harda','male','mr.ankit.singh.81@gmail.com','8120077176','Jaswant Singh','9754306103','Krishna Rajput');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('nivendra vishvakarma','batch4','Bsc','New Jagadish Nagar Indore','male','nivendravishvakarma@gmail.com','9669556797','Ganesh Prasad Vishvakarma','9009556796','Asha Vishvakarma');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('aparna narwariya','batch4','Bsc','113 sukhaliya indore','male','aparnanarvariya321@gmail.com','7373909966','Mahendra Narwariya','9425478622','Sarda Narwariya');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('abhishek rajput','batch4','under graduate','Village Kathadi Nousar Timarni Harda','female','rajputabhisheksingh2003@gmail.com','9111124566','Balveer Singh Rajput','9926823831','Savita Rajput');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('ajay mali','batch4','Btech','57,New Gandhi Palace Extension','male','ajey6162@gmail.com','6260039202','Sanjay Mali','7898578661','Pooja Mali');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('ajay patel','batch4','Bcom','gautampura','male','coderajju@gmail.com','7354243016','Rajak Patel','8435203242','Mumtaz Patel');
+INSERT INTO student(name,batch,qualification,address,gender,email,contactNo,fatherName,parentContact,motherName) values ('yatika dewaskar','batch4','Btech','77 shivaji nagar dewas','female','yatikadewaskar04@gmail.com','7223820279','Nilesh Dewaskar','9827095989','Yamini Dewaskar');	
+
+
+
+
+insert into attendence(stdId,date,time) values ('1','01/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('1','01/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('1','01/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('1','01/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('1','01/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('1','01/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('2','01/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('2','01/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('2','01/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('2','01/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('2','01/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('2','01/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('3','01/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('3','01/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('3','01/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('3','01/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('3','01/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('3','01/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('4','01/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('4','01/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('4','01/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('4','01/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('4','01/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('4','01/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('5','01/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('5','01/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('5','01/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('5','01/02/2023','02:30');
+insert into attendence(stdId,date,time) values ('5','01/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('5','01/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('6','01/02/2023','10:15');
+insert into attendence(stdId,date,time) values ('6','01/02/2023','11:30');
+insert into attendence(stdId,date,time) values ('6','01/02/2023','01:45');
+insert into attendence(stdId,date,time) values ('6','01/02/2023','03;00');
+insert into attendence(stdId,date,time) values ('6','01/02/2023','05:00');
+insert into attendence(stdId,date,time) values ('6','01/02/2023','06:30');
+
+
+
+
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','09:30');
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','10:30');
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','01:00');
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','03;00');
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','05:00');
+ insert into attendence(stdId,date,time) values ('7','02/02/2023','07:00');
+
+
+
+
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','10:00');
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','12:30');
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','01:45');
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','02:00');
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','04:00');
+ insert into attendence(stdId,date,time) values ('8','02/02/2023','06:30');
+
+
+
+
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','09:30');
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','12:00');
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','01:00');
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','01;40');
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','03:00');
+ insert into attendence(stdId,date,time) values ('9','02/02/2023','06:00');
+ 
+
+
+
+insert into attendence(stdId,date,time) values ('6','02/02/2023','09:00');
+insert into attendence(stdId,date,time) values ('6','02/02/2023','12:30');
+insert into attendence(stdId,date,time) values ('6','02/02/2023','01:20'); 
+insert into attendence(stdId,date,time) values ('10','02/02/2023','01;45');
+insert into attendence(stdId,date,time) values ('10','02/02/2023','02:50');
+insert into attendence(stdId,date,time) values ('10','02/02/2023','06:30');
+
+
+
+
+insert into attendence(stdId,date,time) values ('11','04/0/2023','10:15');
+insert into attendence(stdId,date,time) values ('11','04/02/2023','11:30');
+insert into attendence(stdId,date,time) values ('11','04/02/2023','01:45');
+insert into attendence(stdId,date,time) values ('11','04/02/2023','03;00');
+insert into attendence(stdId,date,time) values ('11','04/02/2023','05:00');
+insert into attendence(stdId,date,time) values ('11','04/02/2023','06:30');
+
+
+
+
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','09:30');
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','10:30');
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','01:00');
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','03;00');
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','05:00');
+ insert into attendence(stdId,date,time) values ('12','04/02/2023','07:00');
+ 
+
+
+
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','10:00');
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','12:30');
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','01:45');
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','02;00');
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','04:00');
+ insert into attendence(stdId,date,time) values ('13','04/02/2023','06:30');
+
+
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','09:30');
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','12:00');
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','01:00');
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','01;40');
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','03:00');
+ insert into attendence(stdId,date,time) values ('14','04/02/2023','06:00');
+
+
+
+insert into attendence(stdId,date,time) values ('15','04/02/2023','09:00');
+insert into attendence(stdId,date,time) values ('15','04/02/2023','12:30');
+insert into attendence(stdId,date,time) values ('15','04/02/2023','01:20'); 
+insert into attendence(stdId,date,time) values ('15','04/02/2023','01;45');
+insert into attendence(stdId,date,time) values ('15','04/02/2023','02:50');
+insert into attendence(stdId,date,time) values ('15','04/02/2023','06:30');
+
+
+ 
+
+insert into attendence(stdId,date,time) values(16,'03/02/2023','10:00');
+insert into attendence(stdId,date,time) values(16,'03/02/2023','12:00');	
+insert into attendence(stdId,date,time) values(16,'03/02/2023','01:00');
+insert into attendence(stdId,date,time) values(16,'03/02/2023','03:30');
+insert into attendence(stdId,date,time) values(16,'03/02/2023','05:00');
+insert into attendence(stdId,date,time) values(16,'03/02/2023','06:00');
+
+
+
+insert into attendence(stdId,date,time) values(17,'03/02/2023','10:10');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','01:00');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','01:45');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','03:00');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','03:25');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','05:00');
+insert into attendence(stdId,date,time) values(17,'03/02/2023','06:00');
+
+
+
+insert into attendence(stdId,date,time) values(18,'03/02/2023','10:00');
+insert into attendence(stdId,date,time) values(18,'03/02/2023','11:00');
+insert into attendence(stdId,date,time) values(18,'03/02/2023','11:25');
+insert into attendence(stdId,date,time) values(18,'03/02/2023','01:00');
+insert into attendence(stdId,date,time) values(18,'03/02/2023','01:45');
+insert into attendence(stdId,date,time) values(18,'03/02/2023','05:00');	
+insert into attendence(stdId,date,time) values(18,'03/02/2023','05:30');
+
+insert into attendence(stdId,date,time) values(19,'03/02/2023','09:50');
+insert into attendence(stdId,date,time) values(19,'03/02/2023','11:05');
+insert into attendence(stdId,date,time) values(19,'03/02/2023','11:30');
+insert into attendence(stdId,date,time) values(19,'03/02/2023','01:00');
+insert into attendence(stdId,date,time) values(19,'03/02/2023','01:45');
+insert into attendence(stdId,date,time) values(19,'03/02/2023','06:00');
+
+
+
+insert into attendence(stdId,date,time) values(20,'03/02/2023','10:00');
+insert into attendence(stdId,date,time) values(20,'03/02/2023','06:00');	
+	
+
+
+insert into attendence(stdId,date,time) values ('21','06/02/2023','10:00');
+insert into attendence(stdId,date,time) values ('21','06/02/2023','06:00');
+
+
+insert into attendence(stdId,date,time) values ('22','06/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('22','06/02/2023','06:00');
+
+
+insert into attendence(stdId,date,time) values ('23','06/02/2023','10:00');
+insert into attendence(stdId,date,time) values ('23','06/02/2023','03:00');
+
+
+insert into attendence(stdId,date,time) values ('24','06/02/2023','10:00');
+insert into attendence(stdId,date,time) values ('24','06/02/2023','12:00');
+insert into attendence(stdId,date,time) values ('24','06/02/2023','02:00');
+insert into attendence(stdId,date,time) values ('24','06/02/2023','06:00');
+
+
+insert into attendence(stdId,date,time) values ('25','06/02/2023','12:00');
+insert into attendence(stdId,date,time) values ('25','06/02/2023','02:00');
+
+
+insert into attendence(stdId,date,time)values('26','05/02/2023');
+insert into attendence(stdId,date,time)values('26','05/02/2023','01:00');
+insert into attendence(stdId,date,time)values('26','05/02/2023','02:00');
+insert into attendence(stdId,date,time)values('26','05/02/2023','04:00');
+insert into attendence(stdId,date,time)values('26','05/02/2023','04:20');
+insert into attendence(stdId,date,time)values('26','05/02/2023','06:30');
+
+
+ insert into attendence(stdId,date,time)values('27','05/02/2023','02:00');
+ insert into attendence(stdId,date,time)values('27','05/02/2023','04:00');
+ insert into attendence(stdId,date,time)values('27','05/02/2023','04:15');
+ insert into attendence(stdId,date,time)values('27','05/02/2023','06:10');
+
+
+ insert into attendence(stdId,date,time)values('28','05/02/2023','09:40');
+ insert into attendence(stdId,date,time)values('28','05/02/2023','01:30');
+ insert into attendence(stdId,date,time)values('28','05/02/2023','01:45');
+ insert into attendence(stdId,date,time)values('28','05/02/2023','06:20');
+
+
+ insert into attendence(stdId,date,time)values('29','05/02/2023','09:00');
+ insert into attendence(stdId,date,time)values('29','05/02/2023','04:00');
+
+
+ insert into attendence(stdId,date,time)values('30','05/02/2023','10:30');
+ insert into attendence(stdId,date,time)values('30','05/02/2023','01:00');
+ insert into attendence(stdId,date,time)values('30','05/02/2023','01:40');
+ insert into attendence(stdId,date,time)values('30','05/02/2023','06:10');
+
+
+insert into attendence(stdId,date,time) values ('31','07/02/2023','10:40');
+insert into attendence(stdId,date,time) values ('31','07/02/2023','10:50');
+insert into attendence(stdId,date,time) values ('31','07/02/2023','01:00');
+insert into attendence(stdId,date,time) values ('31','07/02/2023','03:40');
+insert into attendence(stdId,date,time) values ('31','07/02/2023','04:50');
+insert into attendence(stdId,date,time) values ('31','07/02/2023','06:10');
+
+
+insert into attendence(stdId,date,time) values ('32','07/02/2023','11:30');
+insert into attendence(stdId,date,time) values ('32','07/02/2023','12:30');
+insert into attendence(stdId,date,time) values ('32','07/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('32','07/02/2023','02:30');
+insert into attendence(stdId,date,time) values ('32','07/02/2023','04:30');
+insert into attendence(stdId,date,time) values ('32','07/02/2023','05:30');
+
+insert into attendence(stdId,date,time) values ('33','07/02/2023','10:00');
+insert into attendence(stdId,date,time) values ('33','07/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('33','07/02/2023','02:30');
+insert into attendence(stdId,date,time) values ('33','07/02/2023','02:40');
+insert into attendence(stdId,date,time) values ('33','07/02/2023','05:10');
+insert into attendence(stdId,date,time) values ('33','07/02/2023','06:00');
+
+
+insert into attendence(stdId,date,time) values ('34','07/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('34','07/02/2023','10:00');
+insert into attendence(stdId,date,time) values ('34','07/02/2023','02:30');
+insert into attendence(stdId,date,time) values ('34','07/02/2023','02:40');
+insert into attendence(stdId,date,time) values ('34','07/02/2023','04:50');
+insert into attendence(stdId,date,time) values ('34','07/02/2023','06:30');
+
+
+insert into attendence(stdId,date,time) values ('35','07/02/2023','09:30');
+insert into attendence(stdId,date,time) values ('35','07/02/2023','10:30');
+insert into attendence(stdId,date,time) values ('35','07/02/2023','01:30');
+insert into attendence(stdId,date,time) values ('35','07/02/2023','02:30');
+insert into attendence(stdId,date,time) values ('35','07/02/2023','04:00');
+insert into attendence(stdId,date,time) values ('35','07/02/2023','06:30');
+
+
+
+
+
+	
+

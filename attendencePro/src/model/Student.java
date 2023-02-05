@@ -11,40 +11,33 @@ import java.util.ArrayList;
  * @author ftt
  */
 public class Student {
+
     private int id;
     private String name;
+    private String fatherName;
+    private String motherName;
     private String batch;
-    private ArrayList AttendenceList;
-    private String qualification;
-    private String address;
-    private String email;
     private String contactNo;
+    private String email;
+    private String qualification;
+    private String parentContactNo;
+    private String address;
+    private String gender;
+    private ArrayList AttendenceList;
 
-   public Student(int id, String name, String batch, ArrayList AttendenceList, String qualification, String address, String email, String contactNo) {
+    public Student(int id, String name, String batch, String fatherName, String motherName, String contactNo, String email, String qualification, String parentContactNo, String address, String gender, ArrayList AttendenceList) {
         this.id = id;
         this.name = name;
         this.batch = batch;
-        this.AttendenceList = AttendenceList;
+        this.fatherName = fatherName;
+        this.motherName = motherName;
+        this.contactNo = contactNo;
+        this.email = email;
         this.qualification = qualification;
+        this.parentContactNo = parentContactNo;
         this.address = address;
-        this.email = email;
-        this.contactNo = contactNo;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getContactNo() {
-        return contactNo;
-    }
-
-    public void setContactNo(String contactNo) {
-        this.contactNo = contactNo;
+        this.gender = gender;
+        this.AttendenceList = AttendenceList;
     }
 
     public int getId() {
@@ -71,12 +64,36 @@ public class Student {
         this.batch = batch;
     }
 
-    public ArrayList getAttendenceList() {
-        return AttendenceList;
+    public String getFatherName() {
+        return fatherName;
     }
 
-    public void setAttendenceList(ArrayList AttendenceList) {
-        this.AttendenceList = AttendenceList;
+    public void setFatherName(String fatherName) {
+        this.fatherName = fatherName;
+    }
+
+    public String getMotherName() {
+        return motherName;
+    }
+
+    public void setMotherName(String motherName) {
+        this.motherName = motherName;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getQualification() {
@@ -87,6 +104,14 @@ public class Student {
         this.qualification = qualification;
     }
 
+    public String getParentContactNo() {
+        return parentContactNo;
+    }
+
+    public void setParentContactNo(String parentContactNo) {
+        this.parentContactNo = parentContactNo;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -94,6 +119,21 @@ public class Student {
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public ArrayList getAttendenceList() {
+        return AttendenceList;
+    }
+
+    public void setAttendenceList(ArrayList AttendenceList) {
+        this.AttendenceList = AttendenceList;
+    }
+
 }
