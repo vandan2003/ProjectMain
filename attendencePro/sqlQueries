@@ -343,6 +343,17 @@ insert into attendence(stdId,date,time) values ('35','07/02/2023','02:30');
 insert into attendence(stdId,date,time) values ('35','07/02/2023','04:00');
 insert into attendence(stdId,date,time) values ('35','07/02/2023','06:30');
 
+create table attendencemain(
+    -> id int primary key auto_increment,
+    -> stdId int not null,
+    -> inTime varchar(10) default '--',
+    -> outTime varchar(10) default '--',
+    -> duration varchar(10) default '--:--',
+    -> totalBreakeTime varchar(10) default '--:--',
+    -> status varchar (10) default '--');
+
+alter table attendence  add foreign key (stdId) references student (id);
+
 
 
 
