@@ -18,8 +18,6 @@ public class TimeManager {
         for (int i = 1; i < al.size() - 1; i++) {
             String dif = getDifferenceBtwTimes(al.get(i).getTime(), al.get(i + 1).getTime());
             totalBreakTime = getAdditionBtwTimes(totalBreakTime, dif);
-//            System.out.println(totalBreakTime + "*"+dif);
-
             i++;
         }
         return totalBreakTime;
@@ -59,6 +57,7 @@ public class TimeManager {
     }
 
     public static String getAdditionBtwTimes(String time1, String time2) {
+   
         String arr1[] = time1.split(":");
         String arr2[] = time2.split(":");
 
@@ -71,7 +70,8 @@ public class TimeManager {
 
         int totalMin = exitMin + entryMin;
 
-        int totalHour = exitHour - entryHour;
+        int totalHour = exitHour + entryHour;
+      
 
         if (totalMin >= 60) {
             totalMin = totalMin - 60;
