@@ -4,8 +4,12 @@
  */
 package attendencepro;
 
+import dao.AttendenceDao;
+import dao.StudentDao;
 import java.util.ArrayList;
 import model.Attendence;
+import model.AttendenceMain;
+import model.Student;
 
 /**
  *
@@ -81,7 +85,6 @@ public class TimeManager {
     }
 
     public static boolean checkHalfDay(String totalTime) {
-//        String totalTime = "7:20";
         String marginTime = "7:15";
 
         String arr1[] = totalTime.split(":");
@@ -102,5 +105,48 @@ public class TimeManager {
         }
 
         return false;
+    }
+    
+    public static ArrayList<AttendenceMain> getAttendenceByDate(String date){
+      ArrayList<AttendenceMain> attendenceMains = new ArrayList<AttendenceMain>();
+       
+       ArrayList<Student> students = StudentDao.getAllStudents();
+      
+       for(Student st : students){
+          ArrayList<Attendence> al = AttendenceDao.getAttendenceByDateAndId(st.getId(), date);
+          String id = ""+st.getId();
+          String inTime;
+          String outTime;
+          String duration;
+          String totalBreakTime;
+          String status;
+          
+          if(al.size() == 0){
+              status = "ABSENT";
+              inTime = "--:--";
+              outTime = "--:--";
+              totalBreakTime = "--:--";
+              duration = "--:--";
+          }
+          else if(!TimeManager.checkHalfDay(TimeManager.getTotalInTime(al))){
+              status = "HALF-DAY";
+              inTime = al.get(0).getTime();
+              outTime = al.get(al.size()-1).getTime();
+              totalBreakTime = TimeManager.getTotalBreakTime(al);
+              duration = TimeManager.getTotalInTime(al);
+          }
+          else{
+              status = "PRESENT";
+              inTime = al.get(0).getTime();
+              outTime = al.get(al.size()-1).getTime();
+              totalBreakTime = TimeManager.getTotalBreakTime(al);
+              duration = TimeManager.getTotalInTime(al);
+          }
+          
+          AttendenceMain am = new AttendenceMain(id,st.getName(),date, inTime, outTime, duration, totalBreakTime, status);
+          attendenceMains.add(am);
+//          System.out.println(am.getStdId()+" "+st.getName()+" "+am.getDate()+" "+am.getInTime()+" "+am.getOutTime()+" "+am.getDuration()+" "+am.getTotalBreakTime()+" "+ am.getStatus());
+       }
+       return attendenceMains;
     }
 }
